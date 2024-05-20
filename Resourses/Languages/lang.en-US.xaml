@@ -1,0 +1,39 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+
+
+
+    <!--MainWindow-->
+
+    <v:String x:Key="main_Films">Films</v:String>
+    <v:String x:Key="main_Serials">Serials</v:String>
+    <v:String x:Key="main_Actors">Actors</v:String>
+    <v:String x:Key="main_Feautered">Feautered</v:String>
+    <v:String x:Key="main_History">History</v:String>
+    <v:String x:Key="main_Watched">Watched</v:String>
+    <v:String x:Key="main_FilmSerialActor">film,serial,actor...</v:String>
+    <v:String x:Key="main_Search">Search</v:String>
+    <v:String x:Key="main_Register">Register</v:String>
+    <v:String x:Key="main_Authorization">Authorization</v:String>
+    <v:String x:Key="main_AllGenres">All genres</v:String>
+    <v:String x:Key="main_AnyRating">Any rating</v:String>
+    <v:String x:Key="main_AnyYear">By year</v:String>
+    <v:String x:Key="main_AnyCountry">Any country</v:String>
+    <v:String x:Key="main_All">All</v:String>
+    <v:String x:Key="main_AddContent">Add film</v:String>
+
+
+    <!--Register-->
+
+    <v:String x:Key="reg_Post">Mail</v:String>
+    <v:String x:Key="reg_Login">Login</v:String>
+    <v:String x:Key="reg_Password">Password</v:String>
+    <v:String x:Key="reg_HasAcc">Is has account?</v:String>
+    <v:String x:Key="reg_NotHasAcc">No account?</v:String>
+    <v:String x:Key="reg_Sign">Sign</v:String>
+    <v:String x:Key="reg_SignUp">Sign up</v:String>
+    <v:String x:Key="reg_toReg">Register</v:String>
+    <v:String x:Key="reg_toAuth">Authorization</v:String>
+
+</ResourceDictionary>

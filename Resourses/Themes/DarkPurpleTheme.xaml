@@ -1,0 +1,122 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"   
+                    
+
+>
+    <!--Colors-->
+    <Color x:Key="main_Background">#292C35</Color>
+    <Color x:Key="descriptionBackround">#672DA1</Color>
+    <Color x:Key="foregroundColor">#FFFFFF</Color>
+    <Color x:Key="cardBackgroundColor">#292E3C</Color>
+
+    <ControlTemplate TargetType="Button" x:Key="btTemplate">
+        <Border CornerRadius="5" BorderBrush="#542C85" BorderThickness="2"
+                    Background="#7950AC" >
+            <ContentControl Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center" Content="{DynamicResource main_Search}" />
+        </Border>
+    </ControlTemplate>
+
+
+
+
+    <!--Main window-->
+    <Style x:Key="main_MenuItem" TargetType="Button" BasedOn="{StaticResource MaterialDesignFlatLightButton}">
+        <Setter Property="Background" Value="#542C85"/>
+        <Setter Property="FontFamily" Value="{DynamicResource RubikBold}"/>
+        <Setter Property="Foreground" Value="White" />
+    </Style>
+
+    <Style x:Key="FilterBtnStyle" TargetType="Button">
+        <Setter Property="FontFamily" Value="{DynamicResource RubikLight}"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Background" Value="#414551"/>
+    </Style>
+
+    <Style x:Key="main_SearchInput" TargetType="TextBox" BasedOn="{StaticResource MaterialDesignFilledTextBox}">
+        <Setter Property="Background" Value="#FFAE77D5"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="BorderThickness" Value="2"/>
+        <Setter Property="BorderBrush" Value="#542C85"/>
+        <Setter Property="Padding" Value="5"/>
+    </Style>
+
+    <Style x:Key="main_LogoStyle" TargetType="Label">
+        <Setter Property="FontFamily" Value="{DynamicResource RubikBold}"></Setter>
+        <Setter Property="Foreground" Value="White"></Setter>
+        <Setter Property="FontSize" Value="40"></Setter>
+    </Style>
+
+
+    <Style x:Key="main_ButtonStyle" TargetType="Button" BasedOn="{StaticResource MaterialDesignOutlinedDarkButton}">
+        <Setter Property="Background" Value="#7950AC"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontFamily" Value="{DynamicResource RubikLight}"/>
+    </Style>
+    
+    <!--Film description page-->
+
+    <Style x:Key="FD_Title" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{DynamicResource RubikBold}"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="FontSize" Value="40"/>
+    </Style>
+
+    <Style x:Key="FD_Age" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{DynamicResource RubikLight}"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Opacity" Value="0.5"/>
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+
+    <Style x:Key="FD_Ellipse" TargetType="Ellipse">
+        <Setter Property="Fill" Value="#7D4EAC"/>
+    </Style>
+
+    <Style x:Key="FD_RatingValue" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{DynamicResource RubikLight}"/>
+        <Setter Property="FontSize" Value="6"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+
+    <Style x:Key="FD_Text" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{DynamicResource RubikLight}"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="16"/>
+    </Style>
+
+    <Style x:Key="FD_DescriptionText" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{DynamicResource RubikLight}"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="FontSize" Value="16"/>
+    </Style>
+
+    <!--MovieCardsPage-->
+
+    <Style x:Key="MVP_ComboboxItem" TargetType="ComboBox">
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontFamily" Value="{DynamicResource RubikLight}"/>
+        <Setter Property="Background" Value="Transparent"/>
+    </Style>
+    
+    <!--MovieCardControl-->
+    <Style x:Key="MCC_text" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{DynamicResource RubikLight}"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+
+    <Color x:Key="MCC_starColor">#f5a913</Color>
+    
+    
+    <!--RegisterForm-->
+
+    <Style TargetType="Button" x:Key="reg_ExitButton">
+        <Setter Property="Background" Value="#66646D"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+    </Style>
+    
+</ResourceDictionary>

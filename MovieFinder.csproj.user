@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="UserControls\FavouriteSegment.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\FiltredBar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\HistorySegment.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\PaginationControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\ProductionReviewsControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\ReviewSegment.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\SerialCardControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\StarRatingControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Admin\Add\AddMovie.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Admin\Add\AddSerial.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Admin\Edit\EditMovie.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Admin\Edit\EditSerial.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Admin\UserManagment\UserManagment.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AuthorizationPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\FavouritesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\HistoryPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MailConfirmWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MovieCardsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\RegisterPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SerialDescriptionPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SerialsCardPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Resourses\Themes\DarkPurpleTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resourses\Themes\Fonts.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resourses\Themes\LightPurpleTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\FavouriteSegment.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\FiltredBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\HistorySegment.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\PaginationControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\ProductionReviewsControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\ReviewSegment.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\SerialCardControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\StarRatingControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Admin\Add\AddMovie.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Admin\Add\AddSerial.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Admin\Edit\EditMovie.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Admin\Edit\EditSerial.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Admin\UserManagment\UserManagment.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AuthorizationPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\FavouritesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\HistoryPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MailConfirmWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MovieCardsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\RegisterPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SerialDescriptionPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SerialsCardPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

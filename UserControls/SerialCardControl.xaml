@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="MovieFinder.UserControls.SerialCardControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MovieFinder.UserControls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Grid x:Name="FilmCardGrid" Width="302" Height="418" Margin="30 30">
+        <Grid.Background>
+            <SolidColorBrush Color="{DynamicResource cardBackgroundColor}"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="348"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Grid x:Name="CardLastRow" Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="37*"></ColumnDefinition>
+                <ColumnDefinition Width="114*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <materialDesign:PackIcon Kind="Star" Width="24" Height="24" Margin="3,1,47,0">
+                <materialDesign:PackIcon.Foreground>
+                    <SolidColorBrush Color="{DynamicResource MCC_starColor}"/>
+                </materialDesign:PackIcon.Foreground>
+            </materialDesign:PackIcon>
+
+            <TextBlock Style="{DynamicResource MCC_text}" FontSize="16" Text="{Binding rating}" Margin="32,5,10,2"/>
+            <TextBlock Style="{DynamicResource MCC_text}" FontSize="18" Text="{Binding year}" Grid.Column="1" Margin="53,3,127,1"></TextBlock>
+        </Grid>
+
+        <Image Stretch="Fill" Width="302" Height="348">
+            <Image.Source>
+                <Binding Path="image_url"/>
+            </Image.Source>
+        </Image>
+
+        <!--Delete button-->
+
+        <Button HorizontalAlignment="Left"
+                    Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+                    ToolTip="MaterialDesignFloatingActionMiniButton"
+                    Width="30" Height="30" Margin="0,10,0,306" Background="White"
+                    Command="{Binding DataContext.RemovSerialCommand, RelativeSource={RelativeSource FindAncestor,AncestorType=Page} }"
+                    Visibility="{Binding DataContext.IsAdminMode, RelativeSource={RelativeSource FindAncestor,AncestorType=Page},Converter={StaticResource BooleanToVisibilityConverter}}"
+                    CommandParameter="{Binding}"
+                >
+
+            <materialDesign:PackIcon Foreground="Red" Kind="Trash"/>
+        </Button>
+
+        <TextBlock x:Name="MovieTitle" Style="{DynamicResource MCC_text}" FontSize="18" Text="{Binding title}" Grid.Row="1" Width="302" TextAlignment="Center"/>
+        <TextBlock Style="{DynamicResource MCC_text}" FontSize="18" Text="{Binding genres}" Grid.Row="2"  TextAlignment="Center"></TextBlock>
+
+        <!--Edit button-->
+
+        <Button HorizontalAlignment="Left"
+            Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+            ToolTip="MaterialDesignFloatingActionMiniButton"
+            Width="30" Height="30" Margin="32,11,0,307" Background="White"
+            Command="{Binding DataContext.EditSerialCommand, RelativeSource={RelativeSource AncestorType={x:Type Page}, Mode=FindAncestor}}"
+            Visibility="{Binding DataContext.IsAdminMode, RelativeSource={RelativeSource FindAncestor,AncestorType=Page},Converter={StaticResource BooleanToVisibilityConverter}}"
+            CommandParameter="{Binding}"
+                >
+            <materialDesign:PackIcon Foreground="Black" Kind="Pencil"/>
+        </Button>
+
+    </Grid>
+</UserControl>

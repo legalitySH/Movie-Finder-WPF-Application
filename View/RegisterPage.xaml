@@ -1,0 +1,98 @@
+﻿<Page x:Class="MovieFinder.View.RegisterPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:MovieFinder.View"
+      mc:Ignorable="d" 
+      Width="{Binding Source={x:Static SystemParameters.PrimaryScreenWidth}}"
+      Height="{Binding Source={x:Static SystemParameters.PrimaryScreenHeight}}"
+      Title="Страница регистрации">
+
+    <Page.Resources>
+        <Style TargetType="Label" x:Key="LabelStyle">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontFamily" Value="{StaticResource RubikLight}"/>
+            <Setter Property="Margin" Value="40 0 0 0"/>
+        </Style>
+        <Style TargetType="TextBox" x:Key="TextBoxStyle" BasedOn="{StaticResource MaterialDesignOutlinedTextBox}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Background" Value="#A076B2"/>
+            <Setter Property="Margin" Value="40 0 0 0"/>
+            <Setter Property="Width" Value="270"/>
+            <Setter Property="Padding" Value="12"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="{StaticResource RubikLight}"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+
+        <Style TargetType="PasswordBox" x:Key="PasswordTextBox" BasedOn="{StaticResource MaterialDesignOutlinedPasswordBox}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Background" Value="#A076B2"/>
+            <Setter Property="Margin" Value="40 0 0 0"/>
+            <Setter Property="Width" Value="270"/>
+            <Setter Property="Padding" Value="12"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="{StaticResource RubikLight}"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid x:Name="MainGrid">
+        <Grid x:Name="RegisterGrid">
+            <Grid.Background>
+                <SolidColorBrush Color="{DynamicResource main_Background}" Opacity="0.8"/>
+            </Grid.Background>
+        </Grid>
+        <Border BorderBrush="White" BorderThickness="2" Width="350" Height="500">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="350" Height="500">
+                <Grid.Background>
+                    <SolidColorBrush Color="#02000B"/>
+                </Grid.Background>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45*"></RowDefinition>
+                        <RowDefinition Height="60*"></RowDefinition>
+                        <RowDefinition Height="60*"></RowDefinition>
+                        <RowDefinition Height="60*"></RowDefinition>
+                        <RowDefinition Height="70*"></RowDefinition>
+                        <RowDefinition Height="83*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Button x:Name="ExitBtn" Background="#66646D" Grid.Row="0" Style="{DynamicResource MaterialDesignFloatingActionSecondaryButton}" Height="25" HorizontalAlignment="Right" Width="25" Margin="0 0 10 0">
+                        <Button.Content>
+                            <materialDesign:PackIcon Kind="ExitToApp" Foreground="FloralWhite"/>
+                        </Button.Content>
+                    </Button>
+
+                    <StackPanel Grid.Row="1">
+                        <Label Style="{StaticResource LabelStyle}" Content="{DynamicResource reg_Login}"/>
+                        <TextBox x:Name="LoginTextBox" Style="{StaticResource TextBoxStyle}"></TextBox>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="2">
+                        <Label Style="{StaticResource LabelStyle}" Content="{DynamicResource reg_Post}"/>
+                        <TextBox x:Name="MailTextBox" Style="{StaticResource TextBoxStyle}"></TextBox>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="3">
+                        <Label Style="{StaticResource LabelStyle}" Content="{DynamicResource reg_Password}"/>
+                        <PasswordBox x:Name="PasswordTextBox" Style="{StaticResource PasswordTextBox}"></PasswordBox>
+                    </StackPanel>
+
+                    <Button Height="35" Background="#7950AC" Grid.Row="4" x:Name="RegisterBtn" Width="270" Content="{DynamicResource reg_toReg}" Click="RegisterBtn_Click"></Button>
+
+                    <StackPanel Grid.Row="5" Orientation="Horizontal">
+                        <Label FontSize="16" Style="{StaticResource LabelStyle}" Content="{DynamicResource reg_HasAcc}"/>
+                        <Button BorderThickness="0" x:Name="authLink" Background="Transparent" Content="{DynamicResource reg_Sign}" VerticalAlignment="Top"/>
+                    </StackPanel>
+                </Grid>
+
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

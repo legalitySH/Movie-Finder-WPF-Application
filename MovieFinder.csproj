@@ -1,0 +1,168 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.22621.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <StartupObject>MovieFinder.App</StartupObject>
+    <ApplicationIcon>Resourses\Icons\cinema_popcorn_icon-icons.com_66128.ico</ApplicationIcon>
+    <AutoGenerateBindingRedirects>True</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resourses\FilmsGallery\**" />
+    <EmbeddedResource Remove="Resourses\FilmsGallery\**" />
+    <EntityDeploy Remove="Resourses\FilmsGallery\**" />
+    <None Remove="Resourses\FilmsGallery\**" />
+    <Page Remove="Resourses\FilmsGallery\**" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <None Remove="Fonts\Rubik\Rubik-Black.ttf" />
+    <None Remove="Fonts\Rubik\Rubik-BlackItalic.ttf" />
+    <None Remove="Fonts\Rubik\Rubik-Bold.ttf" />
+    <None Remove="Fonts\Rubik\Rubik-BoldItalic.ttf" />
+    <None Remove="Fonts\Rubik\Rubik-ExtraBold.ttf" />
+    <None Remove="Fonts\Rubik\Rubik-ExtraBoldItalic.ttf" />
+    <None Remove="Fonts\Rubik\Rubik-Italic.ttf" />
+    <None Remove="Fonts\Rubik\Rubik-Light.ttf" />
+    <None Remove="Fonts\Rubik\Rubik-LightItalic.ttf" />
+    <None Remove="Fonts\Rubik\Rubik-Medium.ttf" />
+    <None Remove="Fonts\Rubik\Rubik-MediumItalic.ttf" />
+    <None Remove="Fonts\Rubik\Rubik-Regular.ttf" />
+    <None Remove="Fonts\Rubik\Rubik-SemiBold.ttf" />
+    <None Remove="Fonts\Rubik\Rubik-SemiBoldItalic.ttf" />
+    <None Remove="Resourses\Cursor\arrow.cur" />
+    <None Remove="Resourses\Cursor\default.ani" />
+    <None Remove="Resourses\Icons\eng.png" />
+    <None Remove="Resourses\Icons\eye_gray.png" />
+    <None Remove="Resourses\Icons\heart.png" />
+    <None Remove="Resourses\Icons\heart_gray.png" />
+    <None Remove="Resourses\Icons\history.png" />
+    <None Remove="Resourses\Icons\no_image.jpg" />
+    <None Remove="Resourses\Icons\ru.png" />
+    <None Remove="Resourses\Icons\star.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resourses\Icons\cinema_popcorn_icon-icons.com_66128.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Rubik\Rubik-Black.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Rubik\Rubik-BlackItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Rubik\Rubik-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Rubik\Rubik-BoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Rubik\Rubik-ExtraBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Rubik\Rubik-ExtraBoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Rubik\Rubik-Italic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Rubik\Rubik-Light.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Rubik\Rubik-LightItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Rubik\Rubik-Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Rubik\Rubik-MediumItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Rubik\Rubik-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Rubik\Rubik-SemiBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Rubik\Rubik-SemiBoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resourses\Cursor\default.ani">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resourses\Icons\eng.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resourses\Icons\eye_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resourses\Icons\heart.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resourses\Icons\heart_gray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resourses\Icons\history.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resourses\Icons\no_image.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resourses\Icons\ru.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resourses\Icons\star.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resourses\Json\" />
+    <Folder Include="Resourses\Languages\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Mvvm.CodeGenerators" Version="22.1.1" />
+    <PackageReference Include="DevExpressMvvm" Version="23.2.3" />
+    <PackageReference Include="MaterialDesignColors" Version="3.0.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="PropertyChanged.Fody" Version="4.1.0" />
+    <PackageReference Include="Syncfusion.SfInput.WPF" Version="25.2.4" />
+    <PackageReference Include="ToastNotifications" Version="2.5.1" />
+    <PackageReference Include="ToastNotifications.Messages" Version="2.5.1" />
+    <PackageReference Include="Xceed.Products.Wpf.Toolkit.Full" Version="4.6.24151.1544" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Migrations\202404301546346_InitialCreate.resx">
+      <DependentUpon>202404301546346_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.config">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+
+</Project>

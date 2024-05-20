@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="MovieFinder.UserControls.FavouriteSegment"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MovieFinder.UserControls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"   
+             mc:Ignorable="d" 
+             d:DesignHeight="160" d:DesignWidth="1500"
+             DataContext="{Binding}">
+
+    <UserControl.Background>
+        <SolidColorBrush Color="{DynamicResource cardBackgroundColor}"/>
+    </UserControl.Background>
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="133*"/>
+            <ColumnDefinition Width="220*"/>
+            <ColumnDefinition Width="661*"/>
+        </Grid.ColumnDefinitions>
+        <Viewbox Width="Auto">
+            <Image Stretch="Fill" x:Name="Image" Height="Auto" Width="Auto"/>
+        </Viewbox>
+
+        <Viewbox Width="Auto" Grid.Column="1">
+            <StackPanel Margin="10">
+                <TextBlock FontSize="8"  HorizontalAlignment="Center" Style="{DynamicResource FD_Title}" x:Name="Title">Дом(2024)</TextBlock>
+                <TextBlock FontSize="5" HorizontalAlignment="Center" Style="{DynamicResource FD_Text}" x:Name="Genres">ужасы,триллер</TextBlock>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <materialDesign:PackIcon Kind="Star"  Height="10" Width="10" VerticalAlignment="Bottom">
+                        <materialDesign:PackIcon.Foreground>
+                            <SolidColorBrush Color="{DynamicResource MCC_starColor}"/>
+                        </materialDesign:PackIcon.Foreground>
+                    </materialDesign:PackIcon>
+                    <TextBlock  x:Name="Rating" FontSize="6" VerticalAlignment="Bottom" Style="{DynamicResource FD_RatingValue}" Margin="2 0 0 0">5.75</TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </Viewbox>
+        <Viewbox Width="Auto" Grid.Column="2" HorizontalAlignment="Left" Margin="25">
+            <TextBlock x:Name="Descrition"  FontSize="13" VerticalAlignment="Center"   Style="{DynamicResource FD_DescriptionText}" Width="600">
+             2001 год. Менеджер бейсбольной команды Oakland Athletics Билли Бин после проигрыша в ключевом матче команде New York Yankees, которая обладает значительно большим бюджетом, решает в корне изменить систему подбора игроков. Во время деловой поездки в Кливленд он знакомится с молодым выпускником Йеля, экономистом Питером Брэндом, который при помощи математических расчётов предлагает внедрить новаторскую схему оценки полезности игроков, основываясь на показателях их личной статистики.
+            </TextBlock>
+        </Viewbox>
+
+        <Viewbox Grid.Column="4" Width="Auto" Margin="0,60,60,60"/>
+    </Grid>
+
+
+
+</UserControl>

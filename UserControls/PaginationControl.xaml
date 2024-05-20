@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="MovieFinder.UserControls.PaginationControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MovieFinder.UserControls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="600">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130*"></ColumnDefinition>
+            <ColumnDefinition Width="299*"></ColumnDefinition>
+            <ColumnDefinition Width="130*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+       
+
+        <Button Command="{Binding ChangePageContent}" CommandParameter="{Binding Text, ElementName=currentPage}"  x:Name="leftButton" Style="{DynamicResource main_ButtonStyle}" Grid.Column="0" Click="leftButton_Click" Margin="15 0 15 0">
+            <Button.Content>
+                <materialDesign:PackIcon Kind="ArrowLeft"/>
+            </Button.Content>
+        </Button>
+        <Viewbox Grid.Column="1" Width="Auto">
+            <TextBlock x:Name="currentPage" FontSize="26" Style="{DynamicResource FD_Title}" Text="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </Viewbox>
+
+        <Button Command="{Binding ChangePageContent}" CommandParameter="{Binding Text, ElementName=currentPage}" x:Name="rightButton" Style="{DynamicResource main_ButtonStyle}" Grid.Column="2" Click="rightButton_Click" Margin="15 0 15 0">
+            <Button.Content>
+                <materialDesign:PackIcon Kind="ArrowRight"/>
+            </Button.Content>
+        </Button>
+    </Grid>
+</UserControl>

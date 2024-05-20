@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="MovieFinder.UserControls.ReviewSegment"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MovieFinder.UserControls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"   
+             mc:Ignorable="d"  
+             d:DesignHeight="80" d:DesignWidth="1500"
+             DataContext="{Binding}"
+             >
+
+    <UserControl.Background>
+        <SolidColorBrush Color="{DynamicResource cardBackgroundColor}"/>
+    </UserControl.Background>
+    <Border BorderBrush="White" BorderThickness="1">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="7*"></ColumnDefinition>
+                <ColumnDefinition Width="121*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="LogoColor" Grid.Column="0" Background="#02000B">
+                <TextBlock x:Name="LoginLetter" FontSize="60" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="{StaticResource RubikBold}">A</TextBlock>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <Grid.Background>
+                    <SolidColorBrush Color="#AE77D5" Opacity="0.5"></SolidColorBrush>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Foreground="Black" FontSize="20" Margin="20 0 0 0" VerticalAlignment="Center" x:Name="Login" Style="{StaticResource FD_Text}">User</TextBlock>
+                <TextBlock Grid.Row="1" x:Name="ReviewText" Margin="20 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontFamily="{StaticResource RubikLight}" TextWrapping="Wrap" Foreground="White">
+                "Фильм 'Звездные войны: Эпизод IX - Скайуокер. Восход' оказался захватывающим завершением эпической саги.
+                Режиссеры проделали огромную работу, чтобы удовлетворить ожидания фанатов и завершить историю с изяществом. 
+                Визуальные эффекты впечатляют, создавая потрясающие космические сражения и мир галактики. Актерский состав сияет,
+                особенно возвращение иконических персонажей, которые навсегда вписались в историю кинематографа. Сюжет фильма полон волнения, 
+                приключений и неожиданных поворотов, которые держат зрителя в напряжении до самого конца. 'Скайуокер. Восход' достойное завершение эпической саги,
+                которая покорила сердца поклонников по всему миру."
+                </TextBlock>
+            </Grid>
+
+        </Grid>
+    </Border>
+</UserControl>

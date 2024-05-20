@@ -1,0 +1,44 @@
+﻿<Window x:Class="MovieFinder.View.MailConfirmWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MovieFinder.View"
+        mc:Ignorable="d"
+        Title="ErrorMessage" Height="375" Width="600" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <SolidColorBrush Color="{DynamicResource main_Background}"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="253*"></RowDefinition>
+            <RowDefinition Height="100*"></RowDefinition>
+            <RowDefinition Height="100*"></RowDefinition>
+            <RowDefinition Height="100*"></RowDefinition>
+            
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="17*"></ColumnDefinition>
+                <ColumnDefinition Width="103*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Viewbox Width="Auto">
+                <materialDesign:PackIcon Margin="15" Kind="EmailAddOutline" Foreground="MediumPurple" VerticalAlignment="Center" HorizontalAlignment="Center" Width="40" Height="40"/>
+            </Viewbox>
+            <Viewbox Grid.Column="1" Width="Auto" VerticalAlignment="Center">
+                <TextBlock   Height="70" FontSize="14" TextWrapping="Wrap" Width="350" FontFamily="{StaticResource RubikBold}" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="SendingMessage">На почтовый ящик rpsher@bk.ru было отправлено письмо с кодом для подтверждения регистрации, пожалуйста введите его в поле ниже.</TextBlock>
+            </Viewbox>
+
+        </Grid>
+
+        <Viewbox Grid.Row="1" Width="Auto" VerticalAlignment="Bottom" Margin="10">
+            <Label FontFamily="{StaticResource RubikLight}" FontSize="14" Foreground="White">Введите код: </Label>
+        </Viewbox>
+
+        <Viewbox Grid.Row="2" Width="Auto" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <TextBox FontFamily="{StaticResource RubikLight}" Foreground="White" FontSize="14" Padding="2" x:Name="CodeTextBox" VerticalContentAlignment="Center" TextChanged="CodeTextBox_TextChanged"  Background="#AE77D5" Width="50" Height="20" Margin="3"></TextBox>
+        </Viewbox>
+    </Grid>
+</Window>

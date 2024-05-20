@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="MovieFinder.ViewModels.HistoryViewModel">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAEAAAQIAAAAAAAEAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\HistoryViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieFinder.ViewModels.MainWindowViewModel" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEIQAAAQAQEIgAAEAAgjBSAQAAQAAFAwBAaFEI=</HashCode>
+      <FileName>ViewModels\MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MovieFinder.ViewModels.MovieViewModel">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYCAICEAEAAAYCAAAgKAIQCECAAgICAAAAQAkQIggIA=</HashCode>
+      <FileName>ViewModels\MovieViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieFinder.ViewModels.ReviewViewModel">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAkAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>ViewModels\ReviewViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieFinder.ViewModels.SerialsViewModel">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AECAICEAEAAAQABAAoIAIQCUAAAgIAAAAAIhkQYgAAA=</HashCode>
+      <FileName>ViewModels\SerialsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieFinder.ViewModels.UsersViewModel" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAAEAAAIAAAQAIAAIEAIAgAAACAEgACAACUBAACA=</HashCode>
+      <FileName>ViewModels\UsersViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MovieFinder.Database.Repositories.FavouriteRepository">
+    <Position X="23.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYCAAAAAAAAAABAAgAAAAgAABkAAAAAAgAAQAAAAAA=</HashCode>
+      <FileName>Database\Repositories\FavouriteRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MovieFinder.Database.Repositories.HistoryRepository" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYCAAAAAAAAAABAAgAAAAAAAJkAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Database\Repositories\HistoryRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MovieFinder.Database.Repositories.MovieRepository" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYCAAAAAAAAAABAAAAAAAAAABEAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Database\Repositories\MovieRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MovieFinder.Database.Repositories.ReviewRepository" BaseTypeListCollapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYCAAAAAAAEAABAAAAAAAAAABkAAAAACgAAAAAAAAA=</HashCode>
+      <FileName>Database\Repositories\ReviewRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MovieFinder.Database.Repositories.SerialsRepository" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYCAAAAAAAAAABAAAAAAAAAABEAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Database\Repositories\SerialsRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MovieFinder.Database.Repositories.UsersRepository" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYCAAAAAAAAAABAAACAAAAAABEAACAAAoAAAAAAAAA=</HashCode>
+      <FileName>Database\Repositories\UsersRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MovieFinder.Database.ApplicationDbContext">
+    <Position X="14.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAEAACAAAAAAAAAEAAAAAAgAAAEIgAAAAA=</HashCode>
+      <FileName>Database\ApplicationDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieFinder.Database.UnitOfWorkContent">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAGAAACAAEAIAAAAABAIEAIAAgAAAAAASEAAAAAA=</HashCode>
+      <FileName>Database\UnitOfWork.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MovieFinder.Models.FavouriteModel">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAACgA=</HashCode>
+      <FileName>Models\FavouriteModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieFinder.Models.HistoryModel">
+    <Position X="2.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAACgA=</HashCode>
+      <FileName>Models\HistoryModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieFinder.Models.Movie">
+    <Position X="5.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQAEAAIAAAAQAAAEIAAAAAACAQUAAAAAAAAAAoCAAgA=</HashCode>
+      <FileName>Models\Movie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieFinder.Models.Review">
+    <Position X="7.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgBAAAAAAAAAAAAAAAAAABAAAAAAAAAAAACgA=</HashCode>
+      <FileName>Models\Review.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieFinder.Models.Serial">
+    <Position X="4" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAEAAAAQAAQAAAEIAAAAAACAQEAAAAAAAAAAoAAAgA=</HashCode>
+      <FileName>Models\Serial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieFinder.Models.User">
+    <Position X="9.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAABAAAAQAAAAAAAAAAgAAEgA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieFinder.Attributes.CustomCommands">
+    <Position X="13.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\CustomCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieFinder.Attributes.MovieFinderSearcher">
+    <Position X="15.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\MovieSearcher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieFinder.Classes.PasswordHasher">
+    <Position X="12" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\PasswordHasher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

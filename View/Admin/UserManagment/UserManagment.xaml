@@ -1,0 +1,62 @@
+﻿<Window x:Class="MovieFinder.View.Admin.UserManagment.UserManagment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MovieFinder.View.Admin.UserManagment"
+        WindowStartupLocation="CenterScreen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        ResizeMode="NoResize"
+        
+        mc:Ignorable="d"
+        Title="EditMovie" d:DesignHeight="600" d:DesignWidth="1000">
+
+    <Window.Background>
+        <SolidColorBrush Color="{DynamicResource main_Background}"></SolidColorBrush>
+    </Window.Background>
+
+    <Window.DataContext>
+        <Binding/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="469*"></RowDefinition>
+            <RowDefinition Height="115*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="34*"></RowDefinition>
+                <RowDefinition Height="435*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <TextBlock FontSize="20" HorizontalAlignment="Center" Style="{DynamicResource FD_Title}">Все пользователи</TextBlock>
+            <TextBlock FontSize="20" Grid.Column="1" HorizontalAlignment="Center" Style="{DynamicResource FD_Title}">Заблокированные пользователи</TextBlock>
+
+            <DataGrid Grid.Row="1" Margin="15" 
+                      x:Name="UsersDataGrid" ItemsSource="{Binding Users}"
+                      IsReadOnly="True" SelectedItem="{Binding SelectedUser}">
+            </DataGrid>
+
+            <DataGrid Grid.Row="1" Grid.Column="1" Margin="15" x:Name="BlackListedUsers" SelectedItem="{Binding SelectedBannedUser}" ItemsSource="{Binding BannedUsers}" IsReadOnly="True">
+            </DataGrid>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Width="240" x:Name="BlockUserBtn" Click="BlockUserBtn_Click" Style="{DynamicResource main_ButtonStyle}" Content="Заблокировать пользователя"></Button>
+            <Button Width="240" x:Name="UnBlockUserBtn" Click="UnBlockUserBtn_Click" HorizontalAlignment="Left" Grid.Column="1" Style="{DynamicResource main_ButtonStyle}" Content="Разблокировать пользователя"></Button>
+            <Button Width="240" x:Name="CancelBtn" Click="CancelBtn_Click" HorizontalAlignment="Right" Grid.Column="2" Style="{DynamicResource main_ButtonStyle}" Content="Отмена"></Button>
+        </Grid>
+    </Grid>
+</Window>

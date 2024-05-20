@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="MovieFinder.UserControls.ProductionReviewsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:usercontrols ="clr-namespace:MovieFinder.UserControls"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MovieFinder.UserControls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"   
+             mc:Ignorable="d" 
+      d:DesignWidth="{Binding Source={x:Static SystemParameters.PrimaryScreenWidth}}"
+      d:DesignHeight="{Binding Source={x:Static SystemParameters.PrimaryScreenHeight}}"
+      >
+
+    <UserControl.Background>
+        <SolidColorBrush Color="{DynamicResource main_Background}"/>
+    </UserControl.Background>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="21*"></RowDefinition>
+            <RowDefinition Height="53*"></RowDefinition>
+            <RowDefinition Height="142*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="379*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock FontSize="45" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Style="{DynamicResource FD_Title}">Отзывы</TextBlock>
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="237*"></ColumnDefinition>
+                <ColumnDefinition Width="118*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBox x:Name="ReviewTextBox" Height="120" Style="{DynamicResource MaterialDesignOutlinedTextBox}" Background="#B684D8"></TextBox>
+
+            <Button HorizontalAlignment="Left" Margin="40 0 0 0" Click="AddReviewBtn_Click" x:Name="AddReviewBtn" Grid.Column="1" Width="160" Height="49" FontSize="16" Style="{DynamicResource main_ButtonStyle}">Оставить отзыв</Button>
+        </Grid>
+
+
+        <Grid Grid.Row="2" Grid.Column="1" Margin="0 0 0 100">
+                <ListBox IsHitTestVisible="False" x:Name="ReviewsListBox" ScrollViewer.CanContentScroll="True"  VerticalAlignment="Top">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <usercontrols:ReviewSegment Width="1200" DataContext="{Binding}"></usercontrols:ReviewSegment>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+        </Grid>
+
+    </Grid>
+</UserControl>

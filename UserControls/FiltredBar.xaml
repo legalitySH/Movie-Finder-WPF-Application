@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="MovieFinder.UserControls.FiltredBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MovieFinder.UserControls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"       
+             mc:Ignorable="d" 
+             d:DesignHeight="38" d:DesignWidth="180">
+    <Grid>
+        <DockPanel>
+            <Button Command="{Binding AllMoviesCommand}" Width="60"  Height="35" Content="{DynamicResource main_All}" Style="{DynamicResource FilterBtnStyle}"/>
+            <Button Command="{Binding ToFavouritesCommand}" Height="35" Width="60" Style="{DynamicResource FilterBtnStyle}">
+                <Button.Content>
+                    <materialDesign:PackIcon Kind="Heart" Foreground="Red" Width="25" Height="25"/>
+                </Button.Content>
+            </Button>
+            <Button Command="{Binding ToHistoryCommand}" Width="60"  Height="35" Style="{DynamicResource FilterBtnStyle}">
+                <materialDesign:PackIcon Kind="History" Foreground="White" Width="25" Height="25"/>
+            </Button>
+        </DockPanel>
+    </Grid>
+
+</UserControl>
